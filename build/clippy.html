@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clippy!</title>
+
+		<link rel="stylesheet" type="text/css" href="clippy.css" media="all">
+	</head>
+	<body>
+		<h1>WE LOVE U CLIPPY</h1>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="clippy.js"></script>
+		<script type="text/javascript">
+		    clippy.load('Clippy', function (agent) {
+		        agent.show();
+
+				window.setInterval(function () {
+					agent.animate();
+				}, 3000);
+		    });
+		</script>
+	</body>
+</html>
